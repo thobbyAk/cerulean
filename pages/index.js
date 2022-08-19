@@ -102,7 +102,7 @@ export default function Home() {
 	return (
 		<>
 			<Header searchNft={searchNft} />
-			<Box sx={{ p: 4 }}>
+			<Box sx={{ p: 4, background: "#000000" }}>
 				<Grid container spacing={{ xs: 2, md: 2 }}>
 					<Grid item xs={12} md={2}>
 						<Box
@@ -113,7 +113,7 @@ export default function Home() {
 								p: 2,
 							}}
 						>
-							<Typography>Filters</Typography>
+							<Typography sx={{ color: "#ffffff" }}>Filters</Typography>
 							<Typography
 								sx={{
 									mt: 3,
