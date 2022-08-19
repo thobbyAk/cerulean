@@ -25,4 +25,4 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 ## Deployed on Vercel
 
-This application is deploued on vercel [Cerulean Blue](https://cerulean.vercel.app/)
+This application is deployed on vercel [Cerulean Blue](https://cerulean.vercel.app/)
