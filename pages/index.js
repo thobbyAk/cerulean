@@ -5,8 +5,6 @@ import React from "react";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
-import styles from "../styles/Home.module.css";
-import Container from "@mui/material/Container";
 import NftCard from "../components/NftCard";
 import axios from "axios";
 import { Typography } from "@mui/material";
@@ -15,14 +13,12 @@ import { useEffect, useState } from "react";
 import Header from "../components/Header";
 import CircularProgress from "@mui/material/CircularProgress";
 import Footer from "../components/Footer";
-import { useTheme } from "next-themes";
 
 export default function Home() {
-	const { resolvedTheme } = useTheme();
 	//sets value of loader component to false on pageload
 	const [loading, setLoading] = useState(false);
 	//sets default of the url for the fetch nft collection  api
-	const [url, setUrl] = useState(
+	const [url] = useState(
 		"https://testnets-api.opensea.io/api/v1/assets?order_direction=desc&offset=0&limit=200&include_orders=false"
 	);
 	//sets default value for nft collection data
@@ -32,6 +28,7 @@ export default function Home() {
 	const [openStart, setOpenStart] = React.useState(false);
 	const [endDate, setEndDate] = React.useState(null);
 	const [openEnd, setOpenEnd] = React.useState(false);
+
 	const getNftCollections = async () => {
 		setLoading(true);
 		await axios
@@ -49,7 +46,6 @@ export default function Home() {
 
 	const filterNftsWithoutnames = async (data) => {
 		const newArray = await data.filter(function (currentElement) {
-			// the current value is an object, so you can check on its properties
 			return currentElement.name !== null;
 		});
 
@@ -90,7 +86,6 @@ export default function Home() {
 
 			return date >= startDate && date <= endDate;
 		});
-		console.log("filterDate", filteredData);
 		setNftData(filteredData);
 		setLoading(false);
 	};

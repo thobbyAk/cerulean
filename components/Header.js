@@ -32,7 +32,6 @@ export default function Header({ searchNft }) {
 
 	// walletConnected keep track of whether the user's wallet is connected or not
 	const [walletConnected, setWalletConnected] = useState(false);
-	// loading is set to true when we are waiting for a transaction to get mined
 	const [account, setAccount] = useState("");
 	const [mobileView, showMobileView] = useState(false);
 	const [balanceModal, setBalanceModal] = useState(false);
