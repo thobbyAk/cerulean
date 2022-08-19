@@ -107,6 +107,63 @@
   height: 1em;
   margin-left: 0.5rem;
 }
+.textField {
+  height: 45px;
+  border: 1px solid;
+}
+
+.searchBar{
+  display: flex;
+  flex: 1;
+  max-width: 520px;
+  align-items: center;
+  background-color: #363840;
+  border-radius: 0.8rem;
+
+
+}
+.searchBar:hover{
+  background-color: #4c505c;
+}
+.searchIcon{
+  color: #8a939b;
+  margin-left: 14px;
+  margin-right: 14px;
+
+}
+.searchInput{
+  height: 2.6rem;
+  width: fit-content;
+  border: 0;
+  background: transparent;
+  outline: 0;
+  color: #e6e8eb;
+  padding-left: 12px;
+  padding-right: 12px;
+  
+}
+.searchInput::placeholder{
+  color: #8a939b;
+}
+
+.modal_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.close_button {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+}
+.modal_body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
 
 @media (max-width: 600px) {
   .grid {
