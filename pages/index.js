@@ -118,6 +118,7 @@ export default function Home() {
 								sx={{
 									mt: 3,
 									mb: 1,
+									color: "#ffffff",
 								}}
 							>
 								Date
@@ -381,6 +382,7 @@ export default function Home() {
 										<Typography
 											variant="h6"
 											sx={{
+												color: "#ffffff",
 												textAlign: "center",
 											}}
 										>
