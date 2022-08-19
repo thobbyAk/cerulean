@@ -175,7 +175,14 @@ export default function Header({ searchNft }) {
 							/>
 						</IconButton>
 						<div className={styles.modal_body}>
-							<Typography variant="h5">Wallet Balance</Typography>
+							<Typography
+								variant="h5"
+								sx={{
+									color: "#ffffff",
+								}}
+							>
+								Wallet Balance
+							</Typography>
 							<Box
 								sx={{
 									display: "flex",
@@ -186,6 +193,7 @@ export default function Header({ searchNft }) {
 								<Typography
 									sx={{
 										textAlign: "left",
+										color: "#ffffff",
 									}}
 									variant="body1"
 								>
@@ -194,6 +202,7 @@ export default function Header({ searchNft }) {
 								<Typography
 									sx={{
 										textAlign: "left",
+										color: "#ffffff",
 									}}
 									variant="body1"
 								>

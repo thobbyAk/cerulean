@@ -97,7 +97,7 @@ export default function Home() {
 	return (
 		<>
 			<Header searchNft={searchNft} />
-			<Box sx={{ p: 4, background: "#000000" }}>
+			<Box sx={{ p: 4, background: "#000000", minHeight: "100vh" }}>
 				<Grid container spacing={{ xs: 2, md: 2 }}>
 					<Grid item xs={12} md={2}>
 						<Box
