@@ -102,7 +102,7 @@ export default function Home() {
 					<Grid item xs={12} md={2}>
 						<Box
 							sx={{
-								border: "1px solid white",
+								border: "1px solid #ffa100",
 								width: "100%",
 								borderRadius: "8px",
 								p: 2,
@@ -195,7 +195,7 @@ export default function Home() {
 												},
 												"& .MuiOutlinedInput-root": {
 													"& fieldset": {
-														borderColor: "rgb(110, 118, 125)",
+														borderColor: "#ffa100",
 													},
 													"&:hover fieldset": {
 														borderColor: (theme) => theme.palette.primary.main,
@@ -294,7 +294,7 @@ export default function Home() {
 												},
 												"& .MuiOutlinedInput-root": {
 													"& fieldset": {
-														borderColor: "rgb(110, 118, 125)",
+														borderColor: "#ffa100",
 													},
 													"&:hover fieldset": {
 														borderColor: (theme) => theme.palette.primary.main,

@@ -236,7 +236,7 @@ export default function Header({ searchNft }) {
 								textDecoration: "none",
 							}}
 						>
-							Cerulean Blue
+							Cerulean
 						</Typography>
 						<Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
 							<IconButton
@@ -311,7 +311,7 @@ export default function Header({ searchNft }) {
 												padding: "8px 5px",
 											},
 											borderRadius: "64px",
-											border: "1px solid #ffffff",
+											border: "1px solid #ffd602",
 											background: "transparent",
 											":hover": {
 												background: "transparent",
@@ -373,7 +373,7 @@ export default function Header({ searchNft }) {
 												padding: "8px 5px",
 											},
 											borderRadius: "64px",
-											border: "1px solid #ffffff",
+											border: "1px solid #ffd602",
 											background: "transparent",
 											":hover": {
 												background: "transparent",

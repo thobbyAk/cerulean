@@ -13,7 +13,8 @@ export default function NftCard({ assetData }) {
 	return (
 		<Card
 			sx={{
-				background: "#04111d",
+				background: "transparent",
+				border: "1px solid #ffa100",
 				width: "100%",
 				overflow: "hidden",
 				cursor: "pointer",

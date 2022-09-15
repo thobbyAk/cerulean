@@ -17,7 +17,7 @@ function Copyright() {
 			color="text.secondary"
 		>
 			{"Copyright © "}
-			<Link href="/">Cerulean Blue</Link> {new Date().getFullYear()}
+			<Link href="/">Cerulean</Link> {new Date().getFullYear()}
 			{"."}
 		</Typography>
 	);
@@ -40,10 +40,7 @@ export default function Footer() {
 					py: 3,
 					px: 2,
 					mt: "auto",
-					backgroundColor: (theme) =>
-						theme.palette.mode === "dark"
-							? theme.palette.grey[200]
-							: theme.palette.grey[800],
+					backgroundColor: "#04111d",
 				}}
 			>
 				<Container maxWidth="sm">
